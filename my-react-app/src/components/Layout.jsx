@@ -1,23 +1,18 @@
-import { Outlet, Link } from "react-router-dom";
+import Header from './Header'
+import Footer from './Footer'
+import { Outlet } from 'react-router-dom'
+import '../styles/_layout.scss'
 
-export default function Layout() {
+function Layout() {
   return (
-    <>
-      <header>
-        <nav>
-          <ul>
-            <li><Link to="/">Accueil</Link></li>
-            <li><Link to="/about">À propos</Link></li>
-          </ul>
-        </nav>
-      </header>
-
+    <div className="layout">
+      <Header />
       <main>
         <Outlet />
       </main>
-
-      <footer>
-      </footer>
-    </>
-  );
+      <Footer />
+    </div>
+  )
 }
+
+export default Layout
