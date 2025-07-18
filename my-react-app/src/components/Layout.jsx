@@ -6,11 +6,15 @@ import '../styles/_layout.scss'
 function Layout() {
   return (
     <div className="layout">
-      <Header />
+      <header>
+        <Header />
+      </header>
       <main>
         <Outlet />
       </main>
-      <Footer />
+      <footer>
+        <Footer />
+      </footer>
     </div>
   )
 }
