@@ -1,4 +1,9 @@
-@import './variables';
-@import './layout';
-@import './banner';
-@import './card';
+// @import './variables';
+// @import './layout';
+// @import './banner';
+// @import './card';
+
+@use './variables';
+@use './layout';
+@use './banner';
+@use './card';
