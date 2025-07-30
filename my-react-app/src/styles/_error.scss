@@ -1,0 +1,19 @@
+.error {
+  text-align: center;
+  margin: 40px 20px;
+
+  &__code {
+    font-size: 10rem;
+    color: #ff6060;
+    margin: auto;
+  }
+
+  &__message {
+    font-size: 1.5rem;
+    color: #ff6060;
+  }
+
+  &__link {
+    text-decoration: underline;
+    color: black;  }
+}
