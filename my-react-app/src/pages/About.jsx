@@ -1,37 +1,3 @@
-// export default function About() {
-//   return <h1>À propos</h1>;
-// }
-
-// import Banner from "../components/Banner"
-// import bannerImage from "../assets/banner-about.jpg"
-
-// export default function About() {
-//   return (
-//     <>
-//       <Banner image={bannerImage} />
-//       <main className="about-content">
-
-//       </main>
-//     </>
-//   )
-// }
-
-// import Collapse from "../components/Collapse";
-
-// export default function About() {
-//   return (
-//     <div className="about">
-//       <Collapse title="Fiabilité">
-//         <p>Les annonces postées sur Kasa garantissent une fiabilité totale...</p>
-//       </Collapse>
-//       <Collapse title="Respect">
-//         <p>La bienveillance fait partie des valeurs fondatrices de Kasa...</p>
-//       </Collapse>
-//       {/* Autres sections */}
-//     </div>
-//   );
-// }
-
 import Banner from "../components/Banner";
 import Collapse from "../components/Collapse";
 import bannerImage from "../assets/banner-about.jpg";

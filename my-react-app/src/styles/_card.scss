@@ -1,18 +1,17 @@
 .cards-grid {
-  background-color: #f6f6f6;  
+  background-color: #f6f6f6;
   border-radius: 20px;
   padding: 30px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px; 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
 
   @media (max-width: 768px) {
-    background-color: transparent;  // plus de fond gris sur mobile
+    background-color: transparent; // plus de fond gris sur mobile
     padding: 0;
-    display: block;
+    display: block; // empilement
   }
 }
-
 
 .card {
   background-color: white;
@@ -20,15 +19,13 @@
   overflow: hidden;
   position: relative;
   cursor: pointer;
-  flex: 1 1 calc((100% / 3) - 30px); // 3 cards par ligne, gap pris en compte
-  max-width: auto;
-  aspect-ratio: 1 / 1;  // carrée desktop
+  width: 100%;
+  aspect-ratio: 1 / 1; // carrée desktop
   display: flex;
   flex-direction: column;
 
   @media (max-width: 768px) {
-    max-width: 100%;
-    aspect-ratio: 4 / 3;  // rectangulaire portrait
+    aspect-ratio: 4 / 3; // rectangulaire portrait
     margin-bottom: 20px;
   }
 
@@ -40,15 +37,15 @@
 
   &__title {
     position: absolute;
-    bottom: 15px;
+    bottom: 5px;
     left: 15px;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
     text-shadow: 0 0 5px rgba(0,0,0,0.7);
     max-width: 80%;
     line-height: 1.2;
-    white-space: normal; // permet l'empilement des mots
+    white-space: normal;
   }
 }
 

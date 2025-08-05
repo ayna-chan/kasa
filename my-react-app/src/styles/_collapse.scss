@@ -43,5 +43,18 @@
   &__text {
     padding: 10px 20px;
     font-weight: lighter;
+    transform: translateY(-10px);
+    opacity: 0;
+    transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+  }
+
+
+// animation 
+  &.open {
+    .collapse__text {
+      transform: translateY(0);
+      opacity: 1;
+      transition-delay: 0.05s;
+    }
   }
 }
