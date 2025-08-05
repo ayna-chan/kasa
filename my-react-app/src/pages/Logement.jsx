@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
-import data from "../data/data.json"; // adapte le chemin si besoin
+import data from "../data/data.json";
+import Slideshow from "../components/Slideshow";
 
 export default function Logement() {
   const { id } = useParams();
@@ -11,15 +12,9 @@ export default function Logement() {
 
   return (
     <div>
+      <Slideshow pictures={logement.pictures} />
       <h1>{logement.title}</h1>
       <p>{logement.location}</p>
-      <ul>
-        {logement.pictures.map((img, index) => (
-          <li key={index}>
-            <img src={img} alt={`Photo ${index + 1}`} width="200" />
-          </li>
-        ))}
-      </ul>
     </div>
   );
 }
